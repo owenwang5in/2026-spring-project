@@ -1,4 +1,9 @@
-body{
+body {
     background-color: black;
     color: azure;
+
+    footer p {
+        margin: 30;
+        background-color: red;
+    }
 }

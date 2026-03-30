@@ -2,22 +2,17 @@
 <html lang="En">
 
 <head>
-    <link id="whichSheet" rel="stylesheet" href="./styles/light.css">
+    <link id="whichSheet" rel="stylesheet" href="./styles/dark.css">
     <title>
         Mr. Jarjur's Page
     </title>
 
     <script>
-        let mode = 0;
+        let mode = 1;
         const linkElement = document.getElementById('whichSheet');
         const light = "./styles/light.css";
         const dark = "./styles/dark.css";
-        let mood = prompt("How are you feeling?");
-        if (mood === "sleepy"){
-            alert("Wake Up!");
-        } else {
-                alert("Oh! You are feeling " + mood + ".");
-        }
+
 
 
         function changeMode() {
@@ -30,6 +25,16 @@
             }
 
         }
+
+        function howAreYou() {
+            let mood = prompt("How are you feeling?");
+            if (mood === "sleepy") {
+                alert("Wake Up!");
+            } else {
+                alert("Oh! You are feeling " + mood + ".");
+            }
+
+        }
     </script>
 </head>
 
@@ -39,10 +44,16 @@
     </h1>
 
     <button onclick="changeMode();">Change Mode</button>
-
+    <button onclick="howAreYou();">How Are You?</button>
+    <img src="./images/Dog Example 1.png" width = 500>
+    
     <footer>
         <p>
+            
             This space for rent
+        </p>
+        <p>
+            Look at that weiner dog go!
         </p>
 
     </footer>
