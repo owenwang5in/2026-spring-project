@@ -12,9 +12,16 @@
         const linkElement = document.getElementById('whichSheet');
         const light = "./styles/light.css";
         const dark = "./styles/dark.css";
+        let mood = prompt("How are you feeling?");
+        if (mood === "sleepy"){
+            alert("Wake Up!");
+        } else {
+                alert("Oh! You are feeling " + mood + ".");
+        }
+
 
         function changeMode() {
-            if (mode == 0) {
+            if (mode === 0) {
                 linkElement.setAttribute('href', dark);
                 mode = 1;
             } else {
