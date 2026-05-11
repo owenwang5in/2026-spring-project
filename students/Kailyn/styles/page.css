@@ -23,6 +23,7 @@ h1 {
   font-family: "Saira Stencil", sans-serif;
   box-shadow: 10px 5px 5px 0 rgb(146, 146, 146);
   
+  
 }
 
 button {
@@ -44,9 +45,9 @@ button {
 }
 
 .center {
-  max-width: 940px;
+  max-width: 1000px;
   padding: 20px;
-  border: 1px dotted white;
+  border: 1px solid white;
   /* TODO Add margins to center. */
   margin-left: auto;
   margin-right: auto;
@@ -73,4 +74,16 @@ footer {
 max-width:940px;
 margin-left: auto;
   margin-right: auto;
+}
+.big{
+  font-size:40px;
+ 
+}
+
+.line{
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: none
 }
