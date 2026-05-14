@@ -7,10 +7,10 @@ body {
   background: black;
   color: azure;
   /* TODO Add dark mode styles here. */
-    font-family: "Bitcount Grid Double", system-ui;
-    font-family: "Saira Stencil", sans-serif;
-     font-family: "Sekuya", system-ui;
-      font-family: "Cause", cursive;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+  font-family: "Sekuya", system-ui;
+  font-family: "Cause", cursive;
 
 
   i {
@@ -22,10 +22,6 @@ h1 {
   font-family: "BJ Cree", serif;
   font-family: "Bitcount Grid Double", system-ui;
   font-family: "Saira Stencil", sans-serif;
-  box-shadow: 10px 5px 5px 0 rgb(146, 146, 146);
-  
-
-
 }
 
 .light-mode h1 {
@@ -48,26 +44,21 @@ button {
   color: aliceblue;
   border-radius: 5px;
   box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
-
 }
-
 
 .light-mode {
   padding: 20px;
   background: rgb(184, 190, 249);
   color: rgb(0, 0, 0);
-
   /* TODO Add light mode styles here. */
 }
 
 .center {
   max-width: 1000px;
   padding: 20px;
-
   /* TODO Add margins to center. */
   margin-left: auto;
   margin-right: auto;
-
 }
 
 
@@ -118,23 +109,25 @@ footer {
 
 .tab {
   border: 1px solid white;
-  display:inline-block;
+  display: inline-block;
   padding: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom:none;
+  border-bottom: none;
 }
 
-.light-mode .tab{
-   border-color: black;
-  }
-  a{
-    color:white
-  }
-  .light-mode a{
-    color:black;
-  }
+.light-mode .tab {
+  border-color: black;
+}
 
-  main{
-    min-height: 300px;
-  }
+a {
+  color: white
+}
+
+.light-mode a {
+  color: black;
+}
+
+main {
+  min-height: 300px;
+}
