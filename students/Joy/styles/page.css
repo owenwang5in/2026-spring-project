@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+    background-color: #222222;
+  color: rgb(255, 255, 255);
+  /* TODO Add dark mode styles here. */
+}
+
+.light-mode {
+      background-color:#cdffed;
+      color:#ffa5e6;
+  /* TODO Add light mode styles here. */
+}
+
+footer {
+    background-color:#76655D;
+  text-align: center;
+}
+
+.center {
+  width: 940px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* TODO Add margins to center. */
+}
+.poem {
+}
+
+.dark-mode{
+footer {
+    background-color:#ffaddd;
+background: radial-gradient(circle, rgba(255, 173, 221, 1) 10%, rgba(148, 242, 231, 1) 44%);
+  text-align: center;
+}
+}
+.expample{
+    border: 15px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: 200px;
+}
+
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+}
+
+.big{
+    font-size: 50px
+}
+
+.line{
+    display:flex;
+    gap:15px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.underline{
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    border-bottom: 1px solid rgb(255, 158, 237);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.light-mode.underline{
+    border-color: black;
+}
+
+.tab{
+    display: inline-block;
+    border: 1px solid rgb(178, 234, 255);
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom:none;
+}
+
+.light-mode.tab{
+    border-color:black;
+}
+
+a{
+    color:rgb(255, 156, 232);
+}
+
+.light-mode a{
+    color:rgb(255, 59, 219)
+}
+
+main{
+    min-height:50vh;
+    background-color:rgb(186, 255, 240)
+}
+
+.light-mode main{
+    background-color: #FFD4F3;
+}
