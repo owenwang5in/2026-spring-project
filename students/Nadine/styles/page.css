@@ -4,11 +4,11 @@
 
 h1 {
   font-family: "Sekuya", system-ui;
-  box-shadow: 10px 5px 5px 0 rgb(107, 54, 118);
+  box-shadow: 10px 5px 5px 0 rgb(250, 171, 171);
 }
 
 footer {
-  background-image: linear-gradient(to bottom, rgb(76, 39, 82), rgb(203, 156, 200));
+  background-image: linear-gradient(to bottom, rgb(250, 171, 171), rgb(203, 156, 200));
 }
 
 button {
@@ -21,12 +21,12 @@ b {
 
 body {
   padding: 20px;
-  background-color: black;
+  background-color: rgb(49, 24, 53);
   color: aliceblue;
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(250, 171, 171);
 }
 
 .light-mode {
@@ -35,25 +35,35 @@ a {
 }
 
 .light-mode h1 {
-  box-shadow: 10px 5px 5px 0 rgb(250, 171, 171);
+  box-shadow: 10px 5px 5px 0 rgb(76, 39, 82);
 }
 
 .center {
   width: 940px;
   padding: 20px;
-  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .poem {
   text-align: center;
 }
 
+main {
+  min-height: 50vh;
+  background-color: rgb(72, 35, 79);
+}
+
+.light-mode main {
+  background-color: rgb(120, 83, 125);
+}
+
 .light-mode footer {
-  background-image: linear-gradient(to bottom, rgb(250, 171, 171), rgb(203, 156, 200));
+  background-image: linear-gradient(to bottom, rgb(76, 39, 82), rgb(203, 156, 200));
 }
 
 .light-mode a {
- color: rgb(0, 0, 0);
+ color: rgb(76, 39, 82);
 }
 
 .light-mode .underline {
