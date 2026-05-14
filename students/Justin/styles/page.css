@@ -17,32 +17,39 @@ body {
   background-image: linear-gradient(to bottom, rgb(153, 252, 72), rgb(243, 127, 183));
 }
 
+main{
+  min-height: 10px;
+  background-color: rgd;
+}
 
 .center {
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
+  width: 1200px;
   padding: 20px;
 
   /* TODO Add margins to center. */
 }
 
-.poem {
-  text-align: center;
-  box-shadow: 10px 5px 5px 0 rgb(64, 218, 182);
-  border: 15px solid rgb(237, 109, 109);
-  padding: 20px;
-  width: 200px;
-}
 
 footer {
+  min-height: 50vh;
   padding: 200px;
   color: brown;
   background-color: blue;
   background-image: linear-gradient(to bottom, rgb(111, 212, 209), rgb(160, 200, 75));
+  
+  /* TODO Add footer light mode styles here. */
+  background-color: rgb(93, 221, 84);
+  color: blueviolet;
+  box-shadow: 10px 5px 5px 0 rgba(77, 40, 40, 0.419);
+  border: 15px solid grey;
+  padding: 20px;
 }
 
 .light-mode footer {
+    min-height: 50vh;
+
   /* TODO Add footer light mode styles here. */
   background-color: rgb(93, 221, 84);
   color: blueviolet;
@@ -106,36 +113,7 @@ button::after {
   }
 }
 
-#Calculator {
-  border-color: rgb(255, 138, 138);
-  background-image: linear-gradient(to bottom, rgb(252, 218, 83), rgb(252, 243, 83));
-  border-width: 10px;
-  border-style: ridge;
-  display: inline-block;
-}
 
-#counter {
-  border-color: rgb(83, 252, 244);
-  background-image: linear-gradient(to bottom, rgb(83, 252, 244), rgb(66, 144, 87));
-  border-width: 10px;
-  border-style: ridge;
-  min-width: 40px;
-  max-width: 650px;
-
-  /* 套用動畫：2秒一次、平滑循環 */
-  animation: border-dance 2s infinite ease-in-out;
-}
-
-#Calculator-buttons {
-  background-image: linear-gradient(to bottom, rgb(252, 243, 83), rgb(114, 144, 66));
-  border-width: 10px;
-  border-style: ridge;
-  min-width: 100px;
-  max-width: 10000px;
-
-  /* 套用同一個動畫，但稍微延遲一下，製造層次感 */
-  animation: border-dance 2.5s infinite ease-in-out;
-}
 
 /* 定義特效：顏色變換 + 輕微縮放 */
 @keyframes border-dance {
@@ -192,4 +170,44 @@ button::after {
 
 .light-mode .underline{
   border-color: black;
+}
+a {
+  color: rgb(228, 32, 231);
+}
+.light-mode a {
+  color: rgb(0, 0, 0);
+}
+body {
+    /* 讓所有顏色變化在 0.4 秒內平滑完成 */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+header, footer, .tab, button {
+    transition: all 1s ease;
+}
+
+
+/* 設定背景裝飾 */
+body::before,
+body::after {
+    content: "";
+    position: fixed; /* 固定在螢幕兩側，滾動時也會留在原地 */
+    top: 0;
+    width: 150px; /* 圖片的寬度，你可以根據圖片大小調整 */
+    height: 100%;
+    background-image: url("../images/Portrait.reze.png");
+    background-repeat: repeat-y; /* 垂直重複鋪滿 */
+    background-size: contain; /* 確保圖片比例正確 */
+    z-index: -1; /* 放在最底層，不會擋到文字 */
+    pointer-events: none; /* 讓滑鼠可以穿透圖片，點擊後面的按鈕 */
+}
+
+/* 左側圖片 */
+body::before {
+    left: 0;
+}
+
+/* 右側圖片 */
+body::after {
+    right: 0;
 }
