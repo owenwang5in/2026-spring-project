@@ -4,15 +4,16 @@
 
 body {
     padding: 20px;
-    background-color: rgb(184, 223, 246);
-    color: rgb(172, 164, 165);
+   background-color: rgb(254, 201, 233);
+    color: rgb(66, 192, 209);
 }
+
 
 .light-mode {
-    background-color: rgb(109, 145, 177);
-    color: rgb(240, 240, 254);
+      background-color: rgb(163, 240, 249);
+    color: rgb(197, 167, 182);
 }
-
+    
 .center {
     width: 940px;
     padding: 20px;
@@ -80,14 +81,14 @@ footer {
 }
 
 a {
-    color: rgb(82, 85, 87);
+    color: rgb(116, 118, 120);
 }
 
 .light-mode a {
-    color: rgb(237, 228, 228);
+    color: rgb(114, 113, 113);
 }
 
 main {
     min-height: 50vh;
-    background-color: rgba(137, 244, 252, 0.878);
+    background-color: rgba(225, 231, 231, 0.878);
 }
