@@ -21,6 +21,10 @@ body.light-mode footer {
     border-radius: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .light-mode a {
     color: #000000;
 }
