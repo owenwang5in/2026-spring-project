@@ -25,6 +25,7 @@ body.light-mode footer {
     color: #000000;
 }
 
+
 body.dark-mode {
     background-color: black;
     color: aliceblue;
@@ -137,10 +138,12 @@ button:active {
 }
 
 main {
-    min-height: 50vh;
+    display:flow-root;
+    min-height: 55vh;
     background-color: #fed6d65c;
     border-radius: 15px;
     margin: 30px;
 }
+
 
 
