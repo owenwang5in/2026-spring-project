@@ -3,3 +3,16 @@
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+.art-frame {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    border: 10px solid rgb(246, 169, 215);
+}
+
+#my-graffiti{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+}

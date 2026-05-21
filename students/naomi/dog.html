@@ -5,6 +5,10 @@
     <title>My dog: Pink</title>
     <link rel="stylesheet" href="styles/page.css">
     <link rel="stylesheet" href="styles/dog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="dark-mode">
@@ -35,7 +39,13 @@
     <main class="center">
         <h1>My dog: Pink</h1>
         <div class="dog-picture">
-            <img src="./images/dog3 original.png" width="200">
+            <div class="art-frame">
+                <img class="art" src="./images/dog3 original.png" width="400">
+                <canvas id="my-graffiti" width="400" height="400"></canvas>
+            </div>
+            <button id="clean">
+                Clean graffiti
+            </button>
         </div>
         <p>
             <b>Name:</b> Pink<br>
