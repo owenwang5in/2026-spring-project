@@ -3,7 +3,7 @@
  */
 let myGraffiti = document.getElementById("my-graffiti");
 let surface = myGraffiti.getContext("2d");
-let cleanButton=document.getElementById("clean")
+let cleanButton = document.getElementById("clean")
 /*
  *Graffiti style
  */
@@ -37,8 +37,34 @@ shapes();
 /*
  *Clean
  */
-function Clean(){
-surface.clearRect(0,0,400,400);
+function Clean() {
+    surface.clearRect(0, 0, 400, 400);
 }
 
 cleanButton.addEventListener("click", Clean);
+
+/*
+*graffiti
+*/
+
+
+let oldX = 0;
+let oldY = 0;
+function graffiti(event) {
+    const x = event.offsetX;
+    const y = event.offsetY;
+    console.log(x, y, event.buttons);
+if(event.buttons === 1){
+        surface.beginPath();
+    surface.moveTo(oldX,oldY);
+    surface.lineTo(x, y);
+    surface.closePath();
+    surface.stroke();
+    }
+    oldX = x;
+    oldY = y;
+}
+
+
+myGraffiti.addEventListener("mousemove", graffiti);
+    
