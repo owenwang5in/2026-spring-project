@@ -82,4 +82,3 @@ if(event.buttons === 1){
 
 
 myGraffiti.addEventListener("mousemove", graffiti);
-    
