@@ -1,8 +1,9 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
+    {
+      "name": "2026-spring-project",
+      "path": "."
+    }
   ],
   "settings": {
     "chat.disableAIFeatures": true
