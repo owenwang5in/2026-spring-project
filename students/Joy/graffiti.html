@@ -4,6 +4,8 @@
 <head>
     <title>coding</title>
     <link rel="stylesheet" href="./styles/page.css">
+    <link rel="stylesheet" href="./styles/dog.css">
+    <link rel="stylesheet" href="./styles/counter.css">
 </head>
 
 <body class="dark-mode">
@@ -46,6 +48,20 @@
     <main class="center">
         <h1>Graffiti</h1>
 
+ <div class="dog-picture">
+            <div class="art-frame">
+        <img class="art" src="images/no bg.png">
+        <canvas id="my-graffiti" width="400" height="400"></canvas>
+    </div>
+    <label>
+        Color:
+        <input type="color" value="cyan" id="color-input">
+    </label>
+    <label>
+        Size:
+        <input type="range" min="1" max="30" value="10" id="size-input">
+    </label>
+</div>
 
     </main>
 
@@ -54,7 +70,7 @@
 
     <footer>
         <div class="center">
-            <p>5.14.2026</p>
+            <p> <b>5.18.2026</b> </p>
         </div>
 
 
@@ -69,6 +85,7 @@
 
     </footer>
     <script src="./scripts/color-mode.js"></script>
+    <script src="./scripts/graffiti.js"></script>
 
 </body>
 
