@@ -1,5 +1,5 @@
 .dog-picture {
-    float: right;
+    float: left;
 }
 
 .art-frame {
@@ -8,7 +8,6 @@
     height: 404px;
     border: 2px solid magenta;
     border-radius: 10px;
-    margin-left: 10px;
 }
 
 .light-mode .art-frame {
@@ -19,6 +18,21 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#my-graffiti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+button#clean {
+    width: 105px;
+    margin: 10px;
+    margin-left: 0px;
 }
 
 .art-frame img {

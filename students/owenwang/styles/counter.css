@@ -1,0 +1,58 @@
+#calculator {
+  display: inline-block;
+  width: 200px;
+  height: 280px;
+  border: 2px solid magenta;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, black, magenta);
+  text-align: center;
+}
+
+#counter {
+  width: 100px;
+  max-height: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+
+#calculator-buttons button {
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  border-radius: 35px;
+}
+
+#clear-button,
+#minus-one-button,
+#plus-one-button,
+#divide-button {
+  margin-bottom: 3px;
+}
+
+#seven-button,
+#eight-button,
+#nine-button,
+#multiply-button,
+#four-button,
+#five-button,
+#six-button,
+#minus-button,
+#one-button,
+#two-button,
+#three-button,
+#plus-button {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#zero-button,
+#double-zero-button,
+#decimal-point-button,
+#equal-button {
+  margin-top: 3px;
+}

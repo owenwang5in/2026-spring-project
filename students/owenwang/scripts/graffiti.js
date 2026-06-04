@@ -25,25 +25,6 @@ sizeInput.addEventListener("change", changeSize);
 changeSize();
 
 /*
- * Shapes
- */
-function shapes() {
-    surface.rect(150, 200, 100, 100);
-    surface.stroke();
-
-    surface.beginPath();
-    surface.moveTo(200, 50);
-    surface.lineTo(150, 200);
-    surface.moveTo(350, 50);
-    surface.lineTo(250, 50);
-    surface.moveTo(300, 300)
-    surface.lineTo(350, 50);
-    surface.closePath();
-    surface.stroke();
-}
-// shapes();
-
-/*
  * Clean up
  */
 function cleanCanvas() {
