@@ -3,9 +3,10 @@
  */
 const graffitiCanvas = document.getElementById("my-graffiti");
 const surface = graffitiCanvas.getContext("2d");
-const cleanButton = document.getElementById("clean");
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("size-input");
+const toolSelect = document.getElementById("tool-select");
+console.log(toolSelect)
 
 /*
  * Graffiti style.
@@ -72,5 +73,4 @@ function graffiti(event) {
     oldY = y
 }
 
-cleanButton.addEventListener("click", cleanCanvas);
 graffitiCanvas.addEventListener("mousemove", graffiti)
