@@ -62,12 +62,7 @@ body.dark-mode footer {
     text-align: center;
 }
 
-#counter {
-    border-width: 3px;
-    border-color: rgb(84, 193, 243);
-    border-style: solid;
-    display: inline-block;
-}
+
 
 button {
     padding: 12px 24px;
@@ -148,6 +143,5 @@ main {
     border-radius: 15px;
     margin: 30px;
 }
-
 
 
