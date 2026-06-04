@@ -6,6 +6,7 @@
         Graffiti
     </title>
     <link rel="stylesheet" href="../styles/page.css">
+    <link rel="stylesheet" href="../styles/dog.css">
 </head>
 
 <body class="dark-mode">
@@ -36,6 +37,24 @@
     </header>
     <main class="center">
         <h1>Graffiti</h1>
+        <div class="dog-picture">
+            <div class="art-frame">
+                <img class="art" src="../images/P_20260413_111320.jpg" width=400>
+                <canvas id="my-graffiti" width="400" height="400">
+                </canvas>
+            </div>
+            <button id="clean">
+                Clean graffiti
+            </button>
+            <label>
+                Color:
+                <input type="color" value="purple" id="color-input">
+            </label>
+            <label>
+                Size:
+                <input type="range" min="1" max="100" value="10" id="size-input">
+            </label>
+        </div>
     </main>
     <footer>
         <div class="center">
@@ -43,6 +62,7 @@
         </div>
     </footer>
     <script src=" ../scripts/color-mode.js"></script>
+    <script src=" ../scripts/graffiti.js"></script>
 </body>
 
 </html>
