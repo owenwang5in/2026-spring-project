@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./styles/page.css">
+    <link rel="stylesheet" href="./styles/dog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tektur:wght@400..900&display=swap"
@@ -62,7 +63,24 @@
     <main>
         <div class="center">
         <h1>Graffiti</h1>
+        <div class="dog-picture">
+            <div class="art-frame">
+                <img class="art" src="./images/多比3no bg.png" width="400">
+                <canvas id="my-graffiti" width="400" height="400"></canvas>
+            </div>
+            <button id="clean">Clean graffiti</button>
+            <table>
+                Color;
+                <input type="color" value="purple" id="color-input">
+            </table>
+            <table>
+                Size;
+                <input type="range" min="1" max="100" value="10" id="size-input">
+            </table>
+        </div>
         
+   
+
     </main>
     <footer>
     
@@ -70,6 +88,7 @@
         </div>
     </footer>
     <script src="./scripts/color-mode.js"></script>
+    <script src="./scripts/graffiti.js"></script>
 </body>
 
 </html>
