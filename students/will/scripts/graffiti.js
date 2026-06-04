@@ -6,6 +6,8 @@ const surface = graffitiCanvas.getContext("2d");
 const cleanButton = document.getElementById("clean");
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("sizeInput");
+const toolSelect = document.getElementById("tool-select");
+console.log(toolSelect);
 /*
  * Graffiti style.
  */
@@ -47,7 +49,7 @@ shapes();
 function cleanCanvas() {
   surface.clearRect(0, 0, 400, 400);
 }
-cleanButton.addEventListener("click", cleanCanvas);
+
 
 /*
 *graffiti
