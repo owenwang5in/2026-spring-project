@@ -24,8 +24,20 @@ body {
     text-align: left;
 }
 
-#counter {
+#calculator {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgb(25, 26, 26), rgb(84, 84, 84)); background-color: aqua;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    
+    min-width: 250px;
 
+    padding: 15px;
+}
+
+#counter {
+    
     background-color: white;
     color: black;
     border-width: 4px;
