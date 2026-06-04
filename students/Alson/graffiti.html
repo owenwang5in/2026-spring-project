@@ -41,14 +41,18 @@
         <h1>
             Graffiti
         </h1>
-       
+
         <div class="art-frame">
             <img class="art" src="./images/IMG_1279.jpg" width="400">
             <canvas id="my-graffiti" width="400" height="400"></canvas>
         </div>
-        <button id="clean">
-            Clean graffiti
-        </button>
+        <label>
+            Tool:
+            <select id="tool-select">
+                <option value="eraser">Eraser</option>
+                <option value="pen">Pen</option>
+            </select>
+        </label>
         <label>
             Color:
             <input type="color" value="purple" id="color-input">
