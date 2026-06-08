@@ -73,7 +73,7 @@ function graffiti(event) {
     if(event.buttons === 1){
       if(tool === "eraser"){
         width = sizeInput.value
-        surface.clearRect(x, y, width, width)
+        surface.clearRect(x-(width/2), y-(width/2), width, width)
       }else{
       surface.beginPath();
       surface.moveTo(oldX, oldY);
