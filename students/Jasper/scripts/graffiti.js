@@ -13,6 +13,7 @@ console.log(toolSelect)
  */
 surface.lineWidth = 13;
 surface.lineJoin = "round";
+
 changeColor()
 function changeColor() {
 surface.strokeStyle = colorInput.value;
@@ -25,8 +26,16 @@ surface.lineWidth = sizeInput.value;
 console.log(sizeInput.value);
 }
 
+let tool;
+function changeTool() {
+  tool = toolSelect.value;
+  console.log(tool)
+}
+changeTool();
 colorInput.addEventListener("change", changeColor);
 sizeInput.addEventListener("change", changeSize);
+toolSelect.addEventListener("change", changeTool);
+
 /*
  * Shapes
  */
@@ -62,12 +71,18 @@ function graffiti(event) {
     console.log(x, y, event.buttons)
     
     if(event.buttons === 1){
-    surface.beginPath();
-    surface.moveTo(oldX, oldY);
-    surface.lineTo(x, y);
-    surface.closePath();
-    surface.stroke();      
+      if(tool === "eraser"){
+        width = sizeInput.value
+        surface.clearRect(x, y, width, width)
+      }else{
+      surface.beginPath();
+      surface.moveTo(oldX, oldY);
+      surface.lineTo(x, y);
+      surface.closePath();
+      surface.stroke();      
+      }        
     }
+
 
     oldX = x
     oldY = y
