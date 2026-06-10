@@ -41,7 +41,13 @@
                 <img class="art" src="./images/buttercup.png" width="400">
                 <canvas id="my-graffiti" width="400" height="400"></canvas>
             </div>
-            <button id="clean">Clean graffiti</button>
+            <label>
+                Tool:
+                <select id="tool-select">
+                    <option value="eraser">Eraser</option>
+                    <option value="pen" selected>Pen</option>
+                </select>
+            </label>
             <label>
                 Color:
                 <input type="color" value="magenta" id="color-input">

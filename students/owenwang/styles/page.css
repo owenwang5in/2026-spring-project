@@ -221,3 +221,18 @@ footer {
 .light-mode .big img {
   border-color: rgb(255, 170, 255);
 }
+
+/*--------------------------------------------------------------------------------*/
+.dog-picture {
+  position: relative;
+  float: right;
+  width: 400px;
+  height: 400px;
+  border: 2px solid magenta;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.light-mode .dog-picture {
+  border-color: rgb(255, 170, 255);
+}

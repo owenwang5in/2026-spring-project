@@ -1,0 +1,110 @@
+@property --calc-grad-1 {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: false;
+}
+
+@property --calc-grad-2 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+#calculator {
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  border: 2px solid magenta;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, var(--calc-grad-1), var(--calc-grad-2));
+  text-align: center;
+  transition: --calc-grad-1 0.5s ease-out, --calc-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.light-mode #calculator {
+  --calc-grad-1: white;
+  --calc-grad-2: rgb(255, 170, 255);
+  border-color: rgb(255, 170, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+#counter {
+  width: 165px;
+  padding: 0 0 0 5px;
+  border: 2px solid magenta;
+  border-radius: 5px;
+  margin: 0 auto 15px 0;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.light-mode #counter {
+  border-color: rgb(255, 170, 255);
+  background-color: white;
+  color: black;
+}
+
+/*--------------------------------------------------------------------------------*/
+#calculator-buttons button {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: 2px solid magenta;
+  border-radius: 50%;
+  --btn-grad-1: rgb(255, 170, 255);
+  --btn-grad-2: magenta;
+  background-image: linear-gradient(to bottom, var(--btn-grad-1), var(--btn-grad-2));
+  transition: --btn-grad-1 0.5s ease-out, --btn-grad-2 0.5s ease-out, border-color 0.5s ease-out, color 0.5s ease-out;
+}
+
+#calculator-buttons button:hover {
+  border-color: rgb(255, 85, 255);
+  --btn-grad-2: rgb(255, 85, 255);
+}
+
+#calculator-buttons button:active {
+  transform: scale(0.9);
+}
+
+.light-mode #calculator-buttons button {
+  border-color: rgb(255, 170, 255);
+  --btn-grad-1: white;
+  --btn-grad-2: rgb(255, 170, 255);
+  color: black;
+}
+
+.light-mode #calculator-buttons button:hover {
+  border-color: rgb(255, 85, 255);
+  --btn-grad-2: rgb(255, 85, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+#clear-button,
+#minus-one-button,
+#plus-one-button,
+#divide-button {
+  margin-bottom: 3px;
+}
+
+#seven-button,
+#eight-button,
+#nine-button,
+#multiply-button,
+#four-button,
+#five-button,
+#six-button,
+#minus-button,
+#one-button,
+#two-button,
+#three-button,
+#plus-button {
+  margin: 3px 0;
+}
+
+#zero-button,
+#double-zero-button,
+#decimal-point-button,
+#equal-button {
+  margin-top: 3px;
+}
