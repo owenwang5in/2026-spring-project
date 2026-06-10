@@ -4,12 +4,14 @@
 
 body {
     padding: 20px;
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(20, 35, 60), rgb(55, 25, 75));
+     filter: drop-shadow(0 0 8px rgba(55, 25, 75, 0.4));
     color: white;
 }
 
 .light-mode {
-    background-color: white;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 240, 255), rgb(60, 190, 220));
+    filter: drop-shadow(0 0 8px rgba(110, 220, 240, 0.6));
     color: black;
 }
 
