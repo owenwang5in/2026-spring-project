@@ -49,18 +49,22 @@
                 <img class="art" width="400px" src="./images/unnamed (2).webp">
                 <canvas id="my-graffiti" width="400" height="400"></canvas>
             </div>
-            <button id="clean">
-                Clean Graffiti
-            </button>
-            <lable>
+           <label>
+            Tool:
+            <select id="tool-select">
+                <option value="eraser">eraser</option>
+                <option value="pen" selected>Pen</option>
+            </select>
+           </label>
+            <label>
                 Color:
                 <input type="color" value="black" id="color-input">
 
-            </lable>
-            <lable>
+            </label>
+            <label>
                 size:
                 <input type="range" min="1" max="50" value="10" id="size-input">
-            </lable>
+            </label>
         </div>
 
     </main>
@@ -73,8 +77,9 @@
     </footer>
 
     <script src="scripts/color-mode.js"></script>
-    <script src="scripts/color-Graffiti.js"></script>
+    <script src="scripts/graffiti.js"></script>
 
 </body>
+
 
 </html>
