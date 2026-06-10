@@ -6,7 +6,7 @@ const surface = graffitiCanvas.getContext("2d");
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("size-input");
 const toolSelect = document.getElementById("tool-select");
-console.log(toolSelect)
+console.log(toolSelect);
 
 /*
  * Graffiti style.
@@ -16,20 +16,20 @@ surface.lineJoin = "round";
 
 changeColor()
 function changeColor() {
-surface.strokeStyle = colorInput.value;
-console.log(colorInput.value);
+  surface.strokeStyle = colorInput.value;
+  console.log(colorInput.value);
 }
 
 changeSize()
 function changeSize() {
-surface.lineWidth = sizeInput.value;
-console.log(sizeInput.value);
+  surface.lineWidth = sizeInput.value;
+  console.log(sizeInput.value);
 }
 
 let tool;
 function changeTool() {
   tool = toolSelect.value;
-  console.log(tool)
+  console.log(tool);
 }
 changeTool();
 colorInput.addEventListener("change", changeColor);
@@ -63,29 +63,29 @@ shapes();
 function cleanCanvas() {
   surface.clearRect(0, 0, 400, 400);
 }
-    oldX = 0
-    oldY = 0
+oldX = 0
+oldY = 0
 function graffiti(event) {
-    const x = event.offsetX;
-    const y = event.offsetY;
-    console.log(x, y, event.buttons)
-    
-    if(event.buttons === 1){
-      if(tool === "eraser"){
-        width = sizeInput.value
-        surface.clearRect(x-(width/2), y-(width/2), width, width)
-      }else{
+  const x = event.offsetX;
+  const y = event.offsetY;
+  console.log(x, y, event.buttons)
+
+  if (event.buttons === 1) {
+    if (tool === "eraser") {
+      width = sizeInput.value;
+      surface.clearRect(x - (width / 2), y - (width / 2), width, width);
+    } else {
       surface.beginPath();
       surface.moveTo(oldX, oldY);
       surface.lineTo(x, y);
       surface.closePath();
-      surface.stroke();      
-      }        
+      surface.stroke();
     }
+  }
 
 
-    oldX = x
-    oldY = y
+  oldX = x;
+  oldY = y;
 }
 
-graffitiCanvas.addEventListener("mousemove", graffiti)
+graffitiCanvas.addEventListener("mousemove", graffiti);

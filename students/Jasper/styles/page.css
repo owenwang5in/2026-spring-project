@@ -38,7 +38,7 @@ main {
 .light-mode main {
     background-color: rgb(0, 0, 255);
     background-image: linear-gradient(to bottom, rgb(0, 0, 225), rgb(125, 125, 125));
-    color: black;
+    color: white;
 }
 
 footer {
@@ -100,5 +100,5 @@ a {
 }
 
 .light-mode a {
-    color: rgb(0, 0, 255);
+    color: black;
 }
