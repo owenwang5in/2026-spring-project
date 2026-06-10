@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+/*--------------------------------------------------------------------------------*/
+body {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-family: "Gaegu", sans-serif;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/*--------------------------------------------------------------------------------*/
+@property --main-grad-1 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+@property --main-grad-2 {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: false;
+}
+
+main {
+  display: flow-root;
+  min-height: 50vh;
+  border-left: 2px solid magenta;
+  border-right: 2px solid magenta;
+  border-top-left-radius: 10px;
+  background-image: linear-gradient(to bottom, var(--main-grad-1), var(--main-grad-2));
+  transition: --main-grad-1 0.5s ease-out, --main-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.light-mode main {
+  --main-grad-1: rgb(255, 170, 255);
+  --main-grad-2: white;
+  border-color: rgb(255, 170, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+h1 {
+  padding: 10px 0 10px 15px;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  background-color: black;
+  color: white;
+}
+
+.light-mode h1 {
+  background-color: white;
+  color: black;
+}
+
+/*--------------------------------------------------------------------------------*/
+@property --btn-grad-1 {
+  syntax: "<color>";
+  initial-value: rgb(255, 170, 255);
+  inherits: false;
+}
+
+@property --btn-grad-2 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+button {
+  width: 85px;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background-image: linear-gradient(to bottom, var(--btn-grad-1), var(--btn-grad-2));
+  color: white;
+  font-size: 15px;
+  font-family: "Gaegu", sans-serif;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, --btn-grad-1 0.5s ease-out, --btn-grad-2 0.5s ease-out;
+}
+
+button:hover {
+  --btn-grad-2: rgb(255, 85, 255);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.light-mode button {
+  --btn-grad-2: rgb(255, 85, 255);
+}
+
+.light-mode button:hover {
+  --btn-grad-2: magenta;
+}
+
+/*--------------------------------------------------------------------------------*/
+.center {
+  width: 940px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------------------------*/
+.underline {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.light-mode .underline {
+  border-color: white;
+}
+
+/*--------------------------------------------------------------------------------*/
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.light-mode a {
+  color: black;
+}
+
+menu a {
+  margin: 4px;
+}
+
+/*--------------------------------------------------------------------------------*/
+@property --foot-grad-1 {
+  syntax: "<color>";
+  initial-value: rgb(255, 170, 255);
+  inherits: false;
+}
+
+@property --foot-grad-2 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+footer {
+  border-left: 2px solid magenta;
+  border-right: 2px solid magenta;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(to bottom, var(--foot-grad-1), var(--foot-grad-2));
+  color: white;
+  transition: --foot-grad-1 0.5s ease-out, --foot-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.light-mode footer {
+  --foot-grad-2: rgb(255, 85, 255);
+  border-color: transparent;
+}
+
+/*--------------------------------------------------------------------------------*/
+.big b {
+  margin-left: 10px;
+  background: linear-gradient(to bottom, rgb(255, 170, 255) 50%, rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+}
+
+/*--------------------------------------------------------------------------------*/
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*--------------------------------------------------------------------------------*/
+@property --tab-grad-1 {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: false;
+}
+
+@property --tab-grad-2 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+.tab {
+  display: inline-block;
+  border: 2px solid magenta;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 6px 8px 4px 8px;
+  background-image: linear-gradient(to bottom, var(--tab-grad-1), var(--tab-grad-2));
+  transition: --tab-grad-1 0.5s ease-out, --tab-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.light-mode .tab {
+  --tab-grad-1: white;
+  --tab-grad-2: rgb(255, 170, 255);
+  border-color: rgb(255, 170, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+.big img {
+  border: 2px solid magenta;
+  border-radius: 10px;
+}
+
+.light-mode .big img {
+  border-color: rgb(255, 170, 255);
+}

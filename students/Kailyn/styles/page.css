@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(52, 52, 52));
+  color: rgb(185, 207, 207);
+  /* TODO Add dark mode styles here. */
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+  font-family: "Sekuya", system-ui;
+  font-family: "Cause", cursive;
+}
+
+
+h1 {
+  font-family: "BJ Cree", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+}
+
+.light-mode h1 {
+  font-family: "BJ Cree", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+}
+
+button {
+  background-color: rgb(76, 76, 76);
+  color: aliceblue;
+  border-radius: 5px;
+  border:2px solid black;
+  box-shadow: 10px 5px 5px 0 rgb(212, 212, 212);
+
+}
+
+.light-mode button {
+  background-color: rgb(35, 35, 35);
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
+}
+
+.light-mode {
+  padding: 20px;
+  background-image: linear-gradient(to top, rgb(184, 190, 249), rgb(199, 138, 232));
+  color: rgb(64, 43, 66);
+  /* TODO Add light mode styles here. */
+}
+
+.center {
+  max-width: 1000px;
+  padding: 20px;
+  /* TODO Add margins to center. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+footer {
+  /* TODO Add styles */
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to top, rgb(100, 100, 100), rgb(57, 57, 57));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+  color: rgb(111, 27, 132);
+  background-image: linear-gradient(to left, rgb(114, 92, 255), rgb(137, 222, 222));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big {
+  font-size: 40px;
+
+}
+
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: none
+}
+
+.underline {
+  border-bottom: 1px solid rgb(185, 207, 207);
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.light-mode .underline {
+  border-bottom: 1px solid rgb(64, 43, 66);
+  margin-bottom: 0px;
+}
+
+.tab {
+  border: 1px solid rgb(185, 207, 207);
+  display: inline-block;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: none;
+  font-size: larger;
+}
+
+.light-mode .tab {
+  border-color: rgb(64, 43, 66);
+}
+
+a {
+  color: rgb(185, 207, 207);
+}
+
+.light-mode a {
+  color: rgb(64, 43, 66);
+}
+
+main {
+  min-height: 300px;
+  display:flow-root;
+}
+#clean {
+ 
+  border:5px solid black; 
+  box-shadow: 0px 0px 0px 0 rgb(212, 212, 212);
+
+}
+
+.Essay{
+  font-size:large;
+}
+.input{
+   margin:10px ;
+ display: grid;
+}

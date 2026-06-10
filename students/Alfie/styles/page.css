@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header, footer, .tab, button {
+    transition: all 0.4s ease;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode footer {
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.light-mode a {
+    color: #000000;
+}
+
+
+body.dark-mode {
+    background-color: black;
+    color: aliceblue;
+}
+
+body.dark-mode button {
+    background-color: #ff0000;
+}
+
+body.dark-mode main {
+    background-color:rgb(91, 89, 89) ;
+}
+
+
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode b {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode footer {
+    background-color: rgb(167, 167, 167);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.poem {
+    text-align: center;
+}
+
+#counter {
+    border-width: 3px;
+    border-color: rgb(84, 193, 243);
+    border-style: solid;
+    display: inline-block;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    background-color: #ff007b;
+    color: white;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.center {
+    max-width: 940px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banna {
+    font-size: 48px;
+}
+
+.line {
+    display: flex;
+    gap: 15px;
+    justify-content:
+        space-between;
+    align-items: center;
+}
+
+
+.underline {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.tab {
+    display: inline-block;
+    border: 1px solid white;
+    border-bottom: none;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.light-mode .underline {
+    border-color: black;
+}
+
+.light-mode .tab {
+    border-color: black;
+}
+
+main {
+    display:flow-root;
+    min-height: 55vh;
+    background-color: #fed6d65c;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+
+
