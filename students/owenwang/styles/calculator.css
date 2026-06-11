@@ -1,6 +1,6 @@
 @property --calc-grad-1 {
   syntax: "<color>";
-  initial-value: black;
+  initial-value: rgb(51, 0, 51);
   inherits: false;
 }
 
@@ -18,13 +18,13 @@
   border-radius: 10px;
   background-image: linear-gradient(to bottom, var(--calc-grad-1), var(--calc-grad-2));
   text-align: center;
-  transition: --calc-grad-1 0.5s ease-out, --calc-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, --calc-grad-1 0.5s ease-out, --calc-grad-2 0.5s ease-out;
 }
 
 .light-mode #calculator {
+  border-color: rgb(255, 102, 255);
   --calc-grad-1: white;
-  --calc-grad-2: rgb(255, 170, 255);
-  border-color: rgb(255, 170, 255);
+  --calc-grad-2: rgb(255, 102, 255);
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -33,14 +33,14 @@
   padding: 0 0 0 5px;
   border: 2px solid magenta;
   border-radius: 5px;
-  margin: 0 auto 15px 0;
+  margin: 0 auto 15px auto;
   background-color: black;
   color: white;
   text-align: left;
 }
 
 .light-mode #counter {
-  border-color: rgb(255, 170, 255);
+  border-color: rgb(255, 102, 255);
   background-color: white;
   color: black;
 }
@@ -50,17 +50,17 @@
   width: 35px;
   height: 35px;
   padding: 0;
-  border: 2px solid magenta;
+  border: 2px solid rgb(255, 51, 255);
   border-radius: 50%;
-  --btn-grad-1: rgb(255, 170, 255);
-  --btn-grad-2: magenta;
+  --btn-grad-1: rgb(255, 153, 255);
+  --btn-grad-2: rgb(255, 51, 255);
   background-image: linear-gradient(to bottom, var(--btn-grad-1), var(--btn-grad-2));
-  transition: --btn-grad-1 0.5s ease-out, --btn-grad-2 0.5s ease-out, border-color 0.5s ease-out, color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, --btn-grad-1 0.5s ease-out, --btn-grad-2 0.5s ease-out, color 0.5s ease-out, transform 0.1s ease-out;
 }
 
 #calculator-buttons button:hover {
-  border-color: rgb(255, 85, 255);
-  --btn-grad-2: rgb(255, 85, 255);
+  border-color: rgb(255, 102, 255);
+  --btn-grad-2: rgb(255, 102, 255);
 }
 
 #calculator-buttons button:active {
@@ -68,15 +68,15 @@
 }
 
 .light-mode #calculator-buttons button {
-  border-color: rgb(255, 170, 255);
+  border-color: rgb(255, 153, 255);
   --btn-grad-1: white;
-  --btn-grad-2: rgb(255, 170, 255);
+  --btn-grad-2: rgb(255, 153, 255);
   color: black;
 }
 
 .light-mode #calculator-buttons button:hover {
-  border-color: rgb(255, 85, 255);
-  --btn-grad-2: rgb(255, 85, 255);
+  border-color: rgb(255, 204, 255);
+  --btn-grad-2: rgb(255, 204, 255);
 }
 
 /*--------------------------------------------------------------------------------*/

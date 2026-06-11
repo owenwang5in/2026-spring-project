@@ -36,7 +36,7 @@ main {
   border-right: 2px solid magenta;
   border-top-left-radius: 10px;
   background-image: linear-gradient(to bottom, var(--main-grad-1), var(--main-grad-2));
-  transition: --main-grad-1 0.5s ease-out, --main-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, --main-grad-1 0.5s ease-out, --main-grad-2 0.5s ease-out;
 }
 
 .light-mode main {
@@ -83,7 +83,7 @@ button {
   font-size: 15px;
   font-family: "Gaegu", sans-serif;
   cursor: pointer;
-  transition: transform 0.1s ease-out, --btn-grad-1 0.5s ease-out, --btn-grad-2 0.5s ease-out;
+  transition: 0.5s ease-out, --btn-grad-2 0.5s ease-out, transform 0.1s ease-out;
 }
 
 button:hover {
@@ -157,7 +157,7 @@ footer {
   border-radius: 0 0 10px 10px;
   background-image: linear-gradient(to bottom, var(--foot-grad-1), var(--foot-grad-2));
   color: white;
-  transition: --foot-grad-1 0.5s ease-out, --foot-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, --foot-grad-1 0.5s ease-out, --foot-grad-2 0.5s ease-out;
 }
 
 .light-mode footer {
@@ -203,7 +203,7 @@ footer {
   border-top-right-radius: 10px;
   padding: 6px 8px 4px 8px;
   background-image: linear-gradient(to bottom, var(--tab-grad-1), var(--tab-grad-2));
-  transition: --tab-grad-1 0.5s ease-out, --tab-grad-2 0.5s ease-out, border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, --tab-grad-1 0.5s ease-out, --tab-grad-2 0.5s ease-out;
 }
 
 .light-mode .tab {
