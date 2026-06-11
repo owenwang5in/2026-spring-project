@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    transition: all 0.5s ease-out;
 }
 
 body {
@@ -115,6 +116,7 @@ h1 {
     background-color: white;
     color: black;
     padding: 10px;
+    transition: all 0.5s ease-out;
 }
 
 .light-mode h1 {
