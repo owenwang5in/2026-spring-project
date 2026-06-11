@@ -25,6 +25,15 @@ function changeSize() {
 changeSize();
 sizeInput.addEventListener("change", changeSize);
 
+let tool;
+
+function changeTool() {
+    tool = toolSelect.value;
+    console.log(tool);
+}
+changeTool();
+toolSelect.addEventListener("change", changeTool);
+
 
 /*
  * Graffiti
@@ -33,21 +42,29 @@ sizeInput.addEventListener("change", changeSize);
 let oldX = 0;
 let oldY = 0;
 
+
 function graffiti(event) {
     console.log(event);
     const x = event.offsetX;
     const y = event.offsetY;
     console.log(x, y, event.buttons);
 
-    if (event.buttons === 1) {
-        surface.beginPath();
-        surface.moveTo(oldX, oldY);
-        surface.lineTo(x, y);
-        surface.closePath();
-        surface.stroke();
+
+    if (event.buttons > 0) {
+        if (tool === "eraser") {
+            const width = sizeInput.value;
+            surface.clearRect(x - (width / 2), y - (width / 2), width, width);
+        } else {
+            surface.beginPath();
+            surface.moveTo(oldX, oldY);
+            surface.lineTo(x, y);
+            surface.closePath();
+            surface.stroke();
+        }
     }
     oldX = x;
     oldY = y;
+
 
 }
 graffitiCanvas.addEventListener("mousemove", graffiti);
