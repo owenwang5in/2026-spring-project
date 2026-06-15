@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: black;
+  color: azure;
+  font-family: "Pacifico", cursive;
+  font-family: "Tektur", sans-serif;
+  font-family: "Caveat", sans-serif;
+  /* TODO Add dark mode styles here. */
+ 
+
+}
+menu a {
+    font-family: "Bytesized", cursive;
+}
+button {font-family: "Caveat", cursive;
+}
+
+main {
+  display: flow-root;
+  min-height: 50vh;
+  background-color: black;
+}
+.light-mode main {
+  min-height: 50vh;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-family: "Tektur", sans-serif;
+
+}
+
+i {
+  box-shadow: 10px 5px 5px 0 rgb(53, 3, 65);
+}
+
+.light-mode {
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  /* TODO Add light mode styles here. */
+}
+
+button {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.light-mode button {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.center {
+  max-width: 940px;
+  padding: 20px;
+
+  /* TODO Add margins to center. */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.poem {
+  text-align: center;
+}
+
+footer {
+  /* TODO Add styles */
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom, rgb(30, 12, 131), rgb(184, 2, 132));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.light-mode footer {
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to bottom, rgb(200, 189, 246), rgb(243, 181, 225));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+.big {
+  font-size: 48px;
+}
+
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.underline {
+  border-bottom: 1px solid white;
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.light-mode .underline {
+  border-bottom: 1px solid black;
+  margin-bottom: 0px;
+}
+
+.tab {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: none;
+}
+
+.light-mode .tab {
+  border-color: black;
+}
+
+a {color: white;}
+.light-mode a{color: black;}

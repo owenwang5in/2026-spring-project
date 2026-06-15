@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  /* TODO Add dark mode styles here. */
+  background-color: rgb(95, 93, 93);
+  color: #000000;
+  p{
+    background-color: rgb(49, 243, 10);
+  }
+  h1{
+    background-color: rgb(113, 223, 16);
+  }
+  b{
+    background-color: rgb(13, 244, 244);
+  }
+}
+
+.light-mode {
+  /* TODO Add light mode styles here. */
+  background-color: rgb(243, 137, 50);
+  color: rgb(0, 0, 0);
+}
+
+.center {
+  width: 940px;
+  padding: 20px;
+  margin-right:auto ;
+  margin-left: auto;
+  /* TODO Add margins to center. */
+}
+.poem {
+  text-align: center;
+}
+
+main{
+  display: flow-root;
+  min-height: 50vh;
+  background-color: azure(255 255 255/0.1);
+}
+
+footer {
+  /* TODO Add styles */
+  height: 220px;
+  background-image: url(../images/AAAAAANNNNNNNNNGGGGGG.jpg);
+  background-color: rgb(116, 187, 249);
+}
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+  background-color: rgb(174, 255, 0);
+}
+
+button{
+  min-width: 40px;
+  min-height: 20px;
+  margin: 2px;
+}
+
+.big {
+  font-size: 48px;
+}
+
+.line{
+  display: flex;
+  gap: 15px;
+  justify-content: 
+  space-between;
+  align-items: center;
+}
+
+.underline {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  border-bottom: 1px solid wheat;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.light-mode .underline{
+  border-color: rgb(251, 8, 8);
+}
+
+.tab{
+  display: inline-block;
+  border: 1px solid white;
+  border-bottom: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.light-mode .tab{
+  border-color: black;
+}
+
+a{
+  color: pink;
+}

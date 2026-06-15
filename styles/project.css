@@ -1,0 +1,32 @@
+:root {
+  --5in-gap: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-bottom: calc(2 * var(--5in-gap));
+}
+
+.big {
+  font-size: 48px;
+}
+
+.footer {
+  margin-top: calc(2 * var(--5in-gap));
+}
+
+.center {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--5in-gap);
+}

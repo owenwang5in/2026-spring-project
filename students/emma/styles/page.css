@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Kranky", serif;
+  box-shadow: 10px 5px 5px 0 rgba(219, 219, 219, 0.838);
+  color: rgb(160, 160, 160);
+  background-color: rgb(230, 230, 230);
+}
+button {
+  border-radius: 5px;
+}
+
+body {
+  padding: 20px;
+  background-color: black;
+  color: aliceblue;
+}
+
+a {
+  color: rgb(168, 168, 168);
+}
+
+.light-mode {
+  background-color: rgba(251, 251, 251, 0.911);
+  color: black;
+}
+
+.dark-mode h1 {
+  box-shadow: 10px 5px 5px 0 rgb(22, 22, 22);
+  background-color: rgb(61, 61, 61);
+}
+
+.center {
+  width: 940px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.poem {
+  text-align: left;
+}
+
+footer {
+  background-image: linear-gradient(to bottom, rgb(227, 227, 227), rgb(229, 229, 229));
+  
+}
+
+.light-mode footer {
+  background-image: linear-gradient(to bottom, rgb(243, 243, 243), rgb(225, 225, 225));
+}
+
+.dark-mode {
+  background-color: rgb(40, 40, 40);
+}
+.dark-mode h1 {
+  color: rgb(207, 207, 207);
+}
+
+.dark-mode p{
+  color: rgb(216, 216, 216);
+}
+.dark-mode footer{
+  background-image: linear-gradient(to bottom, rgb(33, 33, 33), rgb(16, 16, 16));
+}
+
+.big{
+  font-size: 40px;
+}
+.line{
+  display:flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.underline {
+  display: flex;
+  gap: 15px;
+  justify-content: right;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  margin-bottom: 0;
+  padding: 0;
+}
+.dark-mode .underline {
+  border-bottom: 1px solid rgb(113, 113, 113);
+}
+.tab{
+  display: inline-block;
+  border: 1px solid rgb(113, 113, 113);
+  border-bottom: none;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.light-mode .tab{
+  border-color: rgb(204, 204, 204);
+}
+.dark-mode a{
+  color: rgb(190, 190, 190);
+}
+main{
+  min-height: 50vh;
+  background-color: rgb(247, 247, 247);
+  border: 3px solid rgb(246, 246, 246);
+  border-radius: 15px;
+}
+.dark-mode main{
+  background-color: rgb(66, 66, 66);
+  border: 3px solid rgb(68, 68, 68);
+}
+.ccc{
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 20px;
+}

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: "Sekuya", system-ui;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.center {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.big {
+    font-size: 40px;
+}
+
+.line {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poem {
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    color: brown;
+    background-image: linear-gradient(to bottom, darkslateblue, darkslategrey);
+}
+
+.light-mode footer {
+    background-color: brown;
+    color: blue;
+}
+
+#color-mode-button {
+    background-color: black;
+    color: white;
+    border-radius: 25%;
+    box-shadow: 10px 5px 5px 0 rgb(21, 0, 255);
+}
+
+button {
+    min-width: 40px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, darkslateblue, darkslategrey);
+}
+
+.tab {
+    display: inline-block;
+    border: 1px solid white;
+    border-bottom: 0;
+    padding:10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.underline {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.light-mode .tab{
+    border-color: rgb(0, 0, 0);
+}
+
+.light-mode .underline{
+    border-color: rgb(0, 0, 0);
+}
+
+a{
+    color: white;
+}
+
+.light-mode a{
+    color: black;
+}
+
+main{
+    display:flow-root;
+    min-height: 50vh;
+    background-color: aliceblue/0.1;
+}
+
+.smallFont{
+    font-size: 15px;
+}
