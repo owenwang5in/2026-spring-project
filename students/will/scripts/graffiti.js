@@ -1,13 +1,15 @@
+import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
 /*
  * HTML elements
  */
 const graffitiCanvas = document.getElementById("my-graffiti");
 const surface = graffitiCanvas.getContext("2d");
+const eraser = new CanvasEraser(surface);
 const cleanButton = document.getElementById("clean");
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("sizeInput");
 const toolSelect = document.getElementById("tool-select");
-console.log(toolSelect);
+
 /*
  * Graffiti style.
  */
@@ -73,12 +75,13 @@ let oldY = 0;
 function graffiti(event) {
   const x = event.offsetX;
   const y = event.offsetY;
-  console.log(x, y, event.buttons);
+ 
 
   if (event.buttons === 1) {
     if (tool === "eraser") {
       const width = sizeInput.value;
      surface.clearRect(x - (width / 2), y - (width / 2), width, width);
+     eraser.circle(x,y, radius);
 
 
     } else {
