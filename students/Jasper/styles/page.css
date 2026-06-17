@@ -102,3 +102,7 @@ a {
 .light-mode a {
     color: black;
 }
+
+.indent {
+    margin-left: 80px;
+}
