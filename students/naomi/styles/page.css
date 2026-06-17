@@ -47,7 +47,7 @@ footer {
 }
 
 .example {
-    border: 15px solid rgb(187, 185, 185);
+    border: 15px solid rgb(218, 215, 215);
     padding: 20px;
     width: 200px;
 }
@@ -150,7 +150,7 @@ main {
     width: 40px;
     height: 25px;
     background-color: white;
-    color: rgb(79, 190, 186);
+    color: rgb(68, 164, 161);
     box-shadow: 0 0 0 0 rgb(97, 97, 97);
     font-size: 20px;
 }
