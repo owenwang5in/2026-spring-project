@@ -22,3 +22,8 @@
     left: 0;
     cursor: crosshair;
 }
+
+#mustache {
+    width: 120px;
+    height: auto;
+}
