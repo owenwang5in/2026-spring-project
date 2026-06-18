@@ -1,4 +1,5 @@
 import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
+import { StickyClickyImage } from "../../../scripts/sticky-clicky-image.js";
 /*
  *HTML elements
  */
@@ -8,6 +9,8 @@ const eraser = new CanvasEraser(surface);
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("size-input");
 const toolSelect = document.getElementById("tool-select");
+const stickyMustache = new StickyClickyImage("mustache");
+stickyMustache.setContainerID("dog-picture");
 
 /*
  *Graffiti style.
