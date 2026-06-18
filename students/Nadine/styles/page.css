@@ -127,3 +127,18 @@ main {
   text-align: center;
 }
 
+figure {
+  margin:0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:2px solid rgb(250, 171, 171);
+  padding:10px;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+.light-mode figure {
+  border:2px solid rgb(76, 39, 82);
+}
