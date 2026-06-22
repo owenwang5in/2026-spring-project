@@ -226,13 +226,51 @@ footer {
 .dog-picture {
   position: relative;
   float: right;
+  left: 40px;
   width: 400px;
   height: 400px;
   border: 2px solid magenta;
-  border-radius: 10px;
-  margin-left: 10px;
+  border-radius: 10px 10px 0 10px;
 }
 
 .light-mode .dog-picture {
   border-color: rgb(255, 170, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+@property --figc-grad-1 {
+  syntax: "<color>";
+  initial-value: magenta;
+  inherits: false;
+}
+
+@property --figc-grad-2 {
+  syntax: "<color>";
+  initial-value: rgb(51, 0, 51);
+  inherits: false;
+}
+
+figcaption {
+  position: relative;
+  float: right;
+  top: 400px;
+  left: 440px;
+  padding: 0 6px;
+  border: 2px solid magenta;
+  border-radius: 0 0 6px 6px;
+  background-image: linear-gradient(to bottom, var(--figc-grad-1), var(--figc-grad-2));
+  transition: border-color 0.5s ease-out, --figc-grad-1 0.5s ease-out, --figc-grad-2 0.5s ease-out;
+}
+
+.light-mode figcaption {
+  --figc-grad-1: rgb(255, 170, 255);
+  --figc-grad-2: rgb(255, 221, 255);
+  border-color: rgb(255, 170, 255);
+}
+
+/*--------------------------------------------------------------------------------*/
+#dog-3d {
+  width: 100%;
+  aspect-ratio: 16/9;
+  outline: 2px solid white;
 }

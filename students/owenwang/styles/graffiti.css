@@ -1,8 +1,10 @@
 .dog-picture {
     float: left;
+    left: 0;
+    border: none;
 }
 
-.art-frame {
+.canvas-frame {
     position: relative;
     width: 404px;
     height: 404px;
@@ -10,11 +12,11 @@
     border-radius: 10px;
 }
 
-.light-mode .art-frame {
+.light-mode .canvas-frame {
     border-color: rgb(255, 170, 255);
 }
 
-.art {
+.canvas {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,6 +32,6 @@
     cursor: crosshair;
 }
 
-.art-frame img {
+.canvas-frame img {
     border-radius: 8px;
 }
