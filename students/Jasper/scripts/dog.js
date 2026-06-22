@@ -1,12 +1,12 @@
 import { ModelRotator } from "../../../scripts/model-rotator.js";
 
 const dog = new ModelRotator("dog-3d");
-const model = "/images/Duck.glb";
-const scale = 2;
+const model = "../images/jasper dog.glb";
+const scale = 1;
 const position = {
     x: 5,
     y: 5,
-    z: -5,
+    z: 15,
 }
 
 //dog.loadCube();
