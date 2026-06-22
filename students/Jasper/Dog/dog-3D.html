@@ -7,6 +7,15 @@
     </title>
     <link rel="stylesheet" href="../styles/page.css">
     <link rel="stylesheet" href="../styles/dog.css">
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+        }
+      }
+    </script>
 </head>
 
 <body class="dark-mode">
@@ -37,6 +46,7 @@
     </header>
     <main class="center">
         <h1>My dog: 3D</h1>
+        <canvas id="dog-3d"></canvas>
     </main>
     <footer>
         <div class="center">
@@ -44,7 +54,7 @@
         </div>
     </footer>
     <script src=" ../scripts/color-mode.js"></script>
-    <script src=" ../scripts/graffiti.js"></script>
+    <script src=" ../scripts/dog.js" type="module"></script>
 </body>
 
 </html>
