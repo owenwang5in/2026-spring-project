@@ -16,3 +16,13 @@
     left:0;
     cursor: crosshair;
 }
+.art-frame{
+    position:relative;
+    width: 420px;
+height:420px;
+border:10px solid rgb(0, 255, 0);
+}
+#mustache{
+    width:120px;
+    height:auto;
+}
