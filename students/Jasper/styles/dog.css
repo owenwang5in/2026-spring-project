@@ -9,6 +9,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 5px solid;
+    border-radius: 5px;
 }
 
 #my-graffiti {
@@ -19,7 +21,21 @@
 }
 
 #dog-3d {
-    width: 100%;
-    aspect-ratio: 19 / 9;
-    outline: 2px solid white;
+    width: calc(100% - 96px);
+    margin-left: 48px;
+    margin-right: 48px;
+    aspect-ratio: 16 / 9;
+    border: 7px solid;
+    border-radius: 3px;
+}
+
+.Paint-Dog {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    img {
+    border: 7px solid;
+    border-radius: 5px;
+    }
 }

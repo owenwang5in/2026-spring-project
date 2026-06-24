@@ -112,3 +112,11 @@ a {
 .indent {
     margin-left: 80px;
 }
+
+#fishbone {
+    border: 5px solid;
+    max-width: calc(100% - 150px);
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
