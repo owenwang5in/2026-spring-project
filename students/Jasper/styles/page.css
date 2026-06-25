@@ -119,4 +119,21 @@ a {
     border-radius: 15px;
     margin-left: 75px;
     margin-right: 75px;
+    margin-top: 25px;
+}
+
+#INTRODUCING-RESEARCH-TOPIC {
+    border: 5px solid;
+    max-width: calc(100% - 150px);
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+}
+
+#word {
+    max-width: calc(100% - 150px);
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
 }
