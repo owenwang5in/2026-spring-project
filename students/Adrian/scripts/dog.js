@@ -4,7 +4,7 @@ const dog = new ModelRotator('dog-3D');
 
 // dog.loadCube();
 dog.animate();
-const modle = "/images/Duck.glb";
+const modle = "./images/adriansuDogHead.glb";
 const scale=1;
 const position={
     x:0,
