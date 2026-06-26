@@ -12,9 +12,9 @@ import {
   PlaneGeometry,
   Scene,
   WebGLRenderer,
-} from "three";
-import { OrbitControls } from "three/addons/controls/OrbitControls.min.js";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.min.js";
+} from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.min.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.min.js';
 
 class ModelRotator {
   camera;
@@ -133,7 +133,7 @@ class ModelRotator {
     this.scene.add(axes);
   }
 
-  loadFloor(size = 10, color = "#444444") {
+  loadFloor(size = 10, color = '#444444') {
     const floor = new Mesh(
       new PlaneGeometry(size, size),
       new MeshStandardMaterial({
@@ -152,10 +152,15 @@ class ModelRotator {
     const scene = this.scene;
     const thisModelRotator = this;
 
+    let webServerRoot = '/2026-spring-project';
+    if (!new URL(import.meta.url).pathname.startsWith(`${webServerRoot}/`)) {
+      webServerRoot = '';
+    }
+
     gltfLoader.load(
-      path,
+      `${webServerRoot}${path}`,
       (gltf) => {
-        console.log("Imported model", gltf);
+        console.log('Imported model', gltf);
         gltf.scene.scale.set(scale, scale, scale);
         thisModelRotator.model = gltf;
         scene.add(thisModelRotator.model.scene);
@@ -165,7 +170,7 @@ class ModelRotator {
         }
       },
       () => {
-        console.log("progress");
+        console.log('progress');
       },
       (error) => {
         console.log(error);
