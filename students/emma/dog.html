@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/page.css">
     <link rel="stylesheet" href="styles/dog.css">
     <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/p.css">
     <link href="./styles/page.css">
     <link href="./styles/dog.css">
     <link href="./styles/button.css">
@@ -47,20 +48,20 @@
     </header>
     <main class="center">
         <h1>
-            My Dog: AoAo
+            My Dog: AoAo ᯓ★
         </h1>
         <div class="dog-picture">
             <div class="art-frame">
                 <figure>
                     <img class="art" src="./Images/AoAoposter.png">
-                    <p class="Aoao">Figure: AoAo in April 2026</p>
+                    <p class="Aoao">Figure: A poaster of AoAo</p>
                 </figure>
             </div>
         </div>
 
-        <details class="dogI">
-            <summary>Info</summary>
-            <p>
+        <details class="dogI dataF">
+            <summary><b>Info</b></summary>
+            <p class="dataF"s>
                 1. Name: <b>AoAo</b><br>
                 2. serial number: <b>B5</b><br>
                 3. Sex: <b>male</b><br>
@@ -70,11 +71,11 @@
                 pedestrian.
 
             </p>
-        </details>
+        </details></br>
 
-        <details class="dogI">
-            <summary>intro</summary>
-            <p>
+        <details class="dogI dataF">
+            <summary><b>intro</b></summary>
+            <p class="dataF">
                 <br>
                 Let me introduce you to AoAo, a confident and graceful dog with a strong and loyal heart. He has a
                 calm but
@@ -103,7 +104,39 @@
                 protection, but
                 you also give him love and a chance to love you back.
             </p>
-        </details>
+        </details></br>
+        <details class="dataF">
+            <summary><b>Picture of AoAo🐕</b></summary></br>
+            <div class="gallery-container">
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao.webp" alt="照片 1">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao1.webp" alt="照片 2">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao2.webp" alt="照片 3"></br>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao3.webp" alt="照片 4">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao4.webp" alt="照片 4">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao5.JPG" alt="照片 4">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao6.JPG" alt="照片 4">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="./Images/ao7.JPG" alt="照片 4">
+        </div>
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="放大照片">
+    </div>
+</details>
 
     </main>
 
@@ -116,6 +149,7 @@
         </div>
     </footer>
     <script src="./scripts/color-mode.js"></script>
+    <script src="./scripts/p.js"></script>
 </body>
 
 </html>

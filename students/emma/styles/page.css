@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -9,6 +9,7 @@ h1 {
   background-color: rgb(230, 230, 230);
   padding: 7px;
 }
+
 button {
   border-radius: 5px;
 }
@@ -47,32 +48,38 @@ a {
 
 .date {
   background-image: linear-gradient(to bottom, rgb(227, 227, 227), rgb(229, 229, 229));
-  
+  border: 1px solid rgb(246, 246, 246);
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 .dark-mode {
   background-color: rgb(40, 40, 40);
 }
+
 .dark-mode h1 {
   color: rgb(207, 207, 207);
 }
 
-.dark-mode p{
+.dark-mode p {
   color: rgb(216, 216, 216);
 }
-.dark-mode .date{
+
+.dark-mode .date {
   background-image: linear-gradient(to bottom, rgb(33, 33, 33), rgb(16, 16, 16));
 }
 
-.big{
+.big {
   font-size: 40px;
 }
-.line{
-  display:flex;
+
+.line {
+  display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .underline {
   display: flex;
   gap: 15px;
@@ -81,10 +88,12 @@ a {
   margin-bottom: 0;
   padding: 0;
 }
+
 .dark-mode .underline {
   border-bottom: 1px solid rgb(113, 113, 113);
 }
-.tab{
+
+.tab {
   display: inline-block;
   border: 1px solid rgb(113, 113, 113);
   border-bottom: none;
@@ -92,74 +101,87 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.light-mode .tab{
+
+.light-mode .tab {
   border-color: rgb(204, 204, 204);
 }
-.dark-mode a{
+
+.dark-mode a {
   color: rgb(190, 190, 190);
 }
-main{
+
+main {
   min-height: 50vh;
   background-color: rgb(240, 239, 239);
   border: 3px solid rgb(241, 241, 241);
   border-radius: 15px;
   display: flow-root;
 }
-.dark-mode main{
+
+.dark-mode main {
   background-color: rgb(66, 66, 66);
   border: 3px solid rgb(68, 68, 68);
 }
-.ccc{
+
+.ccc {
   width: 150px;
   border: 3px solid white;
   border-radius: 20px;
 
 }
-.dark-mode .ccc{
+
+.dark-mode .ccc {
   border: 3px solid rgb(35, 35, 35);
 }
 
-.dataP{
+.dataP {
   border: 1px solid white;
   border-radius: 20px;
   margin: 10px;
   width: 500px;
 }
-.dataF{
+
+.dataF {
   margin-left: 15px;
 }
 
-.dark-mode .dataF p{
+.dark-mode .dataF p {
   color: rgb(245, 245, 245);
 }
-b{
+
+b {
   color: rgb(87, 87, 87);
 }
-.dark-mode b{
+
+.dark-mode b {
   color: rgb(223, 223, 223);
 }
-.me{
+
+.me {
   float: right;
-  width: 200px;
   margin-left: 20px;
   border: 5px solid rgb(198, 198, 198);
   border-radius: 15px;
   margin-right: 20px;
 }
-figure{
+
+figure {
   margin: 0;
   margin-top: 20;
   margin-bottom: 20px;
   border: 3px solid gray;
   padding: 3px;
 }
-figcaption{
+
+figcaption {
   font-weight: bold;
 }
-.meintro{
+
+.meintro {
   margin-left: 20px;
 }
-html{
+
+html {
   font-family: "Gluten", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -167,7 +189,8 @@ html{
   font-variation-settings:
     "slnt" 0;
 }
-h1{
+
+h1 {
   font-family: "Gluten", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -175,3 +198,22 @@ h1{
   font-variation-settings:
     "slnt" 0;
 }
+
+#fish {
+  border: 3px solid white;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.pdf-container {
+  margin-top: 20px;
+  width: 70%;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #f1f5f9;
+}
+
