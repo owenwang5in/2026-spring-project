@@ -139,7 +139,7 @@ button:active {
 main {
     display:flow-root;
     min-height: 55vh;
-    background-color: #adaccd5c;
+    background-color: #eaeaea5c;
     border-radius: 15px;
     margin: 30px;
 }
@@ -158,4 +158,8 @@ figcaption {
 
 .light-mode figure {
     border: 1px solid rgb(0, 0, 0);
+}
+
+table {
+    width: 100%;
 }
