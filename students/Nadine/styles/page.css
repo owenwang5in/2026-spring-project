@@ -142,3 +142,8 @@ figcaption {
 .light-mode figure {
   border:2px solid rgb(76, 39, 82);
 }
+
+#cute-pics {
+  float:right;
+  margin-left: 20px;
+}
