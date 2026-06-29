@@ -138,3 +138,11 @@ a {
     margin-top: 25px;
 }
 
+.finish-dog-images {
+    border: 5px solid;
+    max-width: calc(100% - 150px);
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+}
