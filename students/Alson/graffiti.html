@@ -43,7 +43,7 @@
         </h1>
         <div class="dog-picture" id="dog-picture">
             <div class="art-frame">
-                <img class="art" src="./images/IMG_1279.jpg" width="400">
+                <img class="art" src="./images/阿奎亞 1.jpg" width="400">
                 <canvas id="my-graffiti" width="400" height="400"></canvas>
             </div>
             <label>
@@ -53,10 +53,19 @@
                     <option value="pen" selected>Pen</option>
                 </select>
             </label>
+            
             <label>
                 Color:
-                <input type="color" value="purple" id="color-input">
+                <input type="color" value="#3CBEDC" id="color-input" list="preset-colors">
+                
+                <datalist id="preset-colors">
+                    <option value="#3CBEDC"></option>
+                    <option value="#f7d774"></option>
+                    <option value="#FF6699"></option>
+                    <option value="#6633CC"></option>
+                </datalist>
             </label>
+
             <label>
                 Size
                 <input type="range" min="1" max="100" value="10" id="size-input">
