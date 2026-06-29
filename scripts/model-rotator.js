@@ -147,14 +147,15 @@ class ModelRotator {
     this.scene.add(floor);
   }
 
-  load(path, scale = 1, callback = null) {
+  load(path = '/images/Duck.glb', scale = 1, callback = null) {
     const gltfLoader = new GLTFLoader();
     const scene = this.scene;
     const thisModelRotator = this;
 
-    let webServerRoot = '/2026-spring-project';
-    if (!new URL(import.meta.url).pathname.startsWith(`${webServerRoot}/`)) {
-      webServerRoot = '';
+    let webServerRoot = '';
+    const gitHubRoot = '/2026-spring-project';
+    if (new URL(import.meta.url).pathname.startsWith(`${gitHubRoot}/`)) {
+      webServerRoot = gitHubRoot;
     }
 
     gltfLoader.load(
