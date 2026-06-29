@@ -6,6 +6,7 @@
         Graffiti
     </title>
     <link rel="stylesheet" href="../styles/page.css">
+    <link rel="stylesheet" href="../styles/graffiti.css">
 </head>
 
 <body class="dark-mode">
@@ -36,6 +37,38 @@
     </header>
     <main class="center">
         <h1>Graffiti</h1>
+        <div class="dog-picture" id="dog-picture">
+            <div class="art-frame">
+                <img class="art" src="../images/dog 8.jpg" width=400>
+                <canvas id="my-graffiti" width="400" height="400">
+                </canvas>
+            </div>
+
+            <label>
+                Tool
+                <select id="tool-select">
+                    <option value="eraser">Erasre</option>
+                    <option value="pen selected">Pen</option>
+                </select>
+            </label>
+            <label>
+                Color:
+                <input type="color" value="black" id="color-input">
+            </label>
+            <label>
+                Size:
+                <input type="range" min="1" max="100" value="10" id="size-input">
+            </label>
+            <details>
+                <summary>More tools</summary>
+                <figure>
+                    <figcaption>A funny little mustache</figcaption>
+                    <img src="../../../images/mustache.png" id="mustache">
+                    <figcaption>click it one time and move it!</figcaption>
+                    <figcaption>click it one more time to stick it!</figcaption>
+                </figure>
+            </details>
+        </div>
     </main>
     <footer>
         <div class="center">
@@ -43,6 +76,7 @@
         </div>
     </footer>
     <script src=" ../scripts/color-mode.js"></script>
+    <script src=" ../scripts/graffiti.js" type="module"></script>
 </body>
 
 </html>
