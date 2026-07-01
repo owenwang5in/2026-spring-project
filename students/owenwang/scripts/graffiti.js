@@ -5,6 +5,7 @@ import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
  */
 const graffitiCanvas = document.getElementById("my-graffiti");
 const surface = graffitiCanvas.getContext("2d");
+const eraser = new CanvasEraser(surface);
 const colorInput = document.getElementById("color-input");
 const sizeInput = document.getElementById("size-input");
 const toolSelect = document.getElementById("tool-select");
@@ -45,8 +46,8 @@ function graffiti(event) {
 
     if (event.buttons > 0) {
         if (tool === "eraser") {
-            const width = sizeInput.value;
-            surface.clearRect(x - width / 2, y - width / 2, width, width);
+            const radius = sizeInput.value / 2;
+            eraser.circle(x, y, radius);
         } else {
             surface.beginPath();
             surface.moveTo(oldX, oldY);

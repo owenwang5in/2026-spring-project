@@ -1,15 +1,10 @@
-.dog-picture {
-    float: left;
-    left: 0;
-    border: none;
-}
-
 .canvas-frame {
     position: relative;
-    width: 404px;
-    height: 404px;
+    width: 804px;
+    height: 430px;
     border: 2px solid magenta;
     border-radius: 10px;
+    margin: 15px 0;
 }
 
 .light-mode .canvas-frame {
